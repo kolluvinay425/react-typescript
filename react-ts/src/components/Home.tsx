@@ -1,4 +1,4 @@
-import React, { Component, useState } from "react";
+import React, { ChangeEvent, Component, FormEvent, useState } from "react";
 import {Form,Button} from "react-bootstrap"
 
 interface myInt {
@@ -10,8 +10,8 @@ export default class Home extends Component<myInt> {
   state = {
     data:""
   }
-  const myData=() =>{
-    console.log()
+  const myData =(e:ChangeEvent<HTMLInputElement>) =>{
+    console.log(e)
 
   }
   // const apiData = useState([])
